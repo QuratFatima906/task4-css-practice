@@ -1,0 +1,13 @@
+:root {
+    --color-header: #11162c;
+    --color-dark: #20242e;
+    --color-shadow: #e0e2e0;
+    --color-lime: #bae759;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
