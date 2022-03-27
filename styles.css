@@ -102,10 +102,12 @@ body {
     align-self: flex-start;
     flex: 1;
 }
+
 .content-container .middle {
     align-self: center;
     flex: 1;
 }
+
 .content-container .end {
     align-self: flex-end;
     flex: 1;
@@ -118,15 +120,19 @@ body {
         transform: translate(-50%, 30%);
     }
   }
+
 @media screen and (max-width: 1000px) {
     .content-container {
         transform: translate(-50%, 40%);
     }
   }
+
 @media screen and (max-width: 800px) {
+
     .container {
         position: static;
     }
+
     .header {
         border-top: 0;
         width: 100%;
@@ -138,6 +144,7 @@ body {
        padding: 2rem;   
        margin-right: 2rem;
     }
+
     .header .text-container .heading {
        font-size: 1.5rem;     
     }
@@ -151,17 +158,11 @@ body {
         position: static;
     }
 
-    .content-container .start {
-        align-self: center;
-        flex: 1 300px;
-    }
-    .content-container .middle {
-        align-self: center;
-        flex: 1 300px;
-    }
+    .content-container .start,
+    .content-container .middle,
     .content-container .end {
         align-self: center;
         flex: 1 300px;
-    }
+    } 
 
   }
