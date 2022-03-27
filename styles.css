@@ -75,14 +75,13 @@ body {
     left: 50%;
     transform: translate(-50%, 20%);
     margin: auto;
-    /* margin-top: 5rem; */
 }
 
 .content-container .item {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
+    width: 24rem;
     max-width: 24rem;
 }
 
@@ -101,13 +100,68 @@ body {
 
 .content-container .start {
     align-self: flex-start;
+    flex: 1;
 }
 .content-container .middle {
     align-self: center;
+    flex: 1;
 }
 .content-container .end {
     align-self: flex-end;
+    flex: 1;
 }
 
 
 
+@media screen and (max-width: 1200px) {
+    .content-container {
+        transform: translate(-50%, 30%);
+    }
+  }
+@media screen and (max-width: 1000px) {
+    .content-container {
+        transform: translate(-50%, 40%);
+    }
+  }
+@media screen and (max-width: 800px) {
+    .container {
+        position: static;
+    }
+    .header {
+        border-top: 0;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .header .text-container {
+       max-width: 100%;   
+       padding: 2rem;   
+       margin-right: 2rem;
+    }
+    .header .text-container .heading {
+       font-size: 1.5rem;     
+    }
+
+    .content-container {
+        flex-wrap: wrap;
+        padding: 1rem;
+        height: 100%;
+        gap: 5rem;
+        transform: none;
+        position: static;
+    }
+
+    .content-container .start {
+        align-self: center;
+        flex: 1 300px;
+    }
+    .content-container .middle {
+        align-self: center;
+        flex: 1 300px;
+    }
+    .content-container .end {
+        align-self: center;
+        flex: 1 300px;
+    }
+
+  }
